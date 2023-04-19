@@ -4,6 +4,7 @@ import Grid from "./Grid.astro";
 interface QuickLink {
   title: string;
   subtitle?: string;
+  to: string;
 }
 
 interface Props {
@@ -26,18 +27,20 @@ const { title, description, links, longTitle = false } = Astro.props;
     <Grid variant="small">
       {
         links.map((link) => (
-          <li class="mention-card p-10">
-            <p
-              class:list={[
-                longTitle ? "text-sm" : "text-md",
-                "text-white",
-                longTitle ? "italic" : "",
-              ]}
-            >
-              {longTitle ? `"${link.title}"` : link.title}
-            </p>
-            {link.subtitle && <p class="text-md">{link.subtitle}</p>}
-          </li>
+          <a href={link.to}>
+            <li class="mention-card p-10">
+              <p
+                class:list={[
+                  longTitle ? "text-sm" : "text-md",
+                  "text-white",
+                  longTitle ? "italic" : "",
+                ]}
+              >
+                {longTitle ? `"${link.title}"` : link.title}
+              </p>
+              {link.subtitle && <p class="text-md">{link.subtitle}</p>}
+            </li>
+          </a>
         ))
       }
     </Grid>
