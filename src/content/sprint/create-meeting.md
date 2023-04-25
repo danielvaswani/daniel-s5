@@ -4,18 +4,28 @@ publishDate: 2023-04-14 00:00:00
 img: /assets/stock-4.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Reworked how new meetings are created with strategic visual elements.
 tags:
-  - Design
-  - Branding
+  - UX/UI Research
+  - Visual Design
+  - Fullstack Dev
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+The current way users create meetings is slightly flawed in certain ways. 
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+For instance, it is apparent that, through stakeholder interview, users often forget to send out invites for the meeting until its far too late. This suggests that important information is not placed in front of the user as it should be. Furthermore, its important to know where invites getting sent.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Time and date of a meeting looks a little boring, it does the job, but people are found guessing the total meeting duration and the day of the week the meeting was happening. Through user testing, it was found out that users prefer to have sections in which the intent of the section would be boldly stated. Sliders offer more interaction.
+
+Through user testing it was found that the mental model of creating a meeting for the specific user involves imagining the day of the week that they are most available. People have specific activities planned throughout the week but think of it on a daily perspective. And as such it makes sense to include the day of the week in the dialog.
+
+Through thorough user research and expert interview it was concluded that the most common and meaningful time intervals for meetings are 15, 30, 60, 120 mins.
+
+Through user testing it was concluded that the plan meeting button did not show enough intent. It is "just a big green button" that does not convey what it will do. 
+
+It should say what is happening. More specifically, the amount of meetings you have chosen in the meeting reccurence fields should be present in the button, "Plan 3 meetings". But that is not all. The new button tells the user if invites will be sent out as well. 
+
+If you have selected no attendees, it will tell you that no invites will be sent, but if you selected some, and also choose an integration to use, it will tell you precisely where the invites will go, solving the problem of the ominous green button. 
 
 Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 

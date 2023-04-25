@@ -4,8 +4,7 @@ LO: LO4
 img: /assets/stock-4.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  You take a critical look at your project from different perspectives, identify problems, find an effective approach and arrive at appropriate solutions.
 tags:
   - Design
   - Branding

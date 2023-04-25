@@ -28,7 +28,7 @@ const { title, description, links, longTitle = false } = Astro.props;
       {
         links.map((link) => (
           <a href={link.to}>
-            <li class="mention-card p-10">
+            <li class="mention-card p-10 h-40">
               <p
                 class:list={[
                   longTitle ? "text-sm" : "text-md",
