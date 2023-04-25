@@ -68,8 +68,7 @@ const researchQuestions = (await getCollection("research-question")).sort(
           title="Hello, my name is Daniel Vaswani"
           tagline="I am a Fullstack Developer & UX/UI Designer who is currently based in Eindhoven."
           align="start"
-        >
-        </Hero>
+        />
 
         <!-- <img
 					alt=""
@@ -102,11 +101,24 @@ const researchQuestions = (await getCollection("research-question")).sort(
         </div>
       </section>
 
-      <QuickLink title="Learning Outcomes" links={learningOutcomes.map(lo => ({title: lo.data.title, subtitle: lo.data.LO, to: `learning-outcome/${lo.data.title.toLowerCase().split(' ').join('-')}`}))}/>
+      <QuickLink
+        title="Learning Outcomes"
+        links={learningOutcomes.map((lo) => ({
+          title: lo.data.title,
+          subtitle: lo.data.LO,
+          to: `learning-outcome/${lo.data.title
+            .toLowerCase()
+            .split(" ")
+            .join("-")}`,
+        }))}
+      />
 
       <QuickLink
         title="Research Questions"
-        links={researchQuestions.map(lo => ({title: lo.data.question, to: `research-question/${lo.data.title.slice(2)}`}))}
+        links={researchQuestions.map((lo) => ({
+          title: lo.data.question,
+          to: `research-questions/${lo.data.title.slice(2)}`,
+        }))}
         longTitle
       />
     </main>
