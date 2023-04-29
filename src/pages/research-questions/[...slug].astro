@@ -8,7 +8,7 @@ import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
 
 interface Props {
-  entry: CollectionEntry<"learning-outcome">;
+  entry: CollectionEntry<"research-question">;
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
@@ -32,23 +32,27 @@ const { Content } = await entry.render();
       <header>
         <div class="wrapper stack gap-2">
           <a class="back-link" href="/"><Icon icon="arrow-left" /> Home</a>
-          <Hero title={entry.data.title} align="start">
-            <div class="details">
-              <div class="tags">
-                {entry.data.tags.map((t: any) => <Pill>{t}</Pill>)}
-              </div>
-              <p class="description">{entry.data.description}</p>
-            </div>
-          </Hero>
+          
         </div>
       </header>
       <main class="wrapper">
         <div class="stack gap-10 content">
-          {
-            entry.data.img && (
-              <img src={entry.data.img} alt={entry.data.img_alt || ""} />
-            )
-          }
+          <div class="relative w-full bg-red-300 overflow-hidden rounded-3xl">
+            {
+              entry.data.img && (
+                <img
+                  class=""
+                  src={entry.data.img}
+                  alt={entry.data.img_alt || ""}
+                />
+              )
+            }
+            <h3
+              class="absolute -top-6 backdrop-blur-[2px] flex flex-col p-8 text-2xl justify-center h-full backdrop-brightness-50 sm:text-4xl"
+            >
+              {entry.data.question}
+            </h3>
+          </div>
           <div class="content">
             <Content />
           </div>
