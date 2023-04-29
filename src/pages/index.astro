@@ -61,40 +61,40 @@ const researchQuestions = (await getCollection("research-question")).sort(
         longTitle
       />
 
-    <main class="wrapper stack gap-20 lg:gap-48">
-      <section class="section with-background with-cta">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Sprints</h3>
-          <p>Every sprint has a different Theme, Scope & Learning Outcomes.</p>
-        </header>
-
-        <div class="gallery">
-          <Grid variant="offset">
-            {
-              sprints.map((sprint) => (
-                <li>
-                  <PortfolioPreview project={sprint} />
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
-      </section>
-
       
-
+      
+      
       <QuickLink
-        title="Learning Outcomes"
-        links={learningOutcomes.map((lo) => ({
-          title: lo.data.title,
-          subtitle: lo.data.LO,
-          to: `learning-outcome/${lo.data.title
-            .toLowerCase()
-            .split(" ")
-            .join("-")}`,
+      title="Learning Outcomes"
+      links={learningOutcomes.map((lo) => ({
+        title: lo.data.title,
+        subtitle: lo.data.LO,
+        to: `learning-outcome/${lo.data.title
+          .toLowerCase()
+          .split(" ")
+          .join("-")}`,
         }))}
       />
-
+      
+      <main class="wrapper stack gap-20 lg:gap-48">
+        <section class="section with-background with-cta">
+          <header class="section-header stack gap-2 lg:gap-4">
+            <h3>Sprints</h3>
+            <p>Every sprint has a different Theme, Scope & Learning Outcomes.</p>
+          </header>
+    
+          <div class="gallery">
+            <Grid variant="offset">
+              {
+                sprints.map((sprint) => (
+                  <li>
+                    <PortfolioPreview project={sprint} />
+                  </li>
+                ))
+              }
+            </Grid>
+          </div>
+        </section>
     </main>
   </div>
 </BaseLayout>
