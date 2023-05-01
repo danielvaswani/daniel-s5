@@ -106,7 +106,7 @@ const researchQuestions = (await getCollection("research-question")).sort(
 
       <QuickLink
         title="Research Questions"
-        links={researchQuestions.map(lo => ({title: lo.data.question, to: `research-question/${lo.data.title.slice(2)}`}))}
+        links={researchQuestions.map(lo => ({title: lo.data.question, to: `research-questions/${lo.data.title.slice(2)}`}))}
         longTitle
       />
     </main>
