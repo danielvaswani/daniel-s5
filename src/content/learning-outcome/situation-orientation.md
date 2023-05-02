@@ -5,7 +5,7 @@ publishDate: 2023-05-19 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  You apply your previously acquired knowledge and skills in an authentic context to deliver relevant results for the project and company.
 tags:
   - Design
   - Dev
