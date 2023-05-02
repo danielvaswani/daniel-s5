@@ -28,36 +28,6 @@ const researchQuestions = (await getCollection("research-question")).sort(
   (a, b) => Number(a.data.title.slice(2)) - Number(b.data.title.slice(2))
 );
 
-// const researchQuestions = [
-//   {
-//     title:
-//       "How might we create a succesful, functional, reliable and meaningful UI platform for helping people with keeping track of informeation shared in and around meetings?",
-//   },
-//   {
-//     title:
-//       "How might we reduce onboarding and training time needed and decrease CTR for the web application?",
-//   },
-//   {
-//     title:
-//       "How might we map the process of doing the meeting agenda, minutes, and meeting report to users mental model of how meeting information points can be planned, collected and dispersed with everyone involved?",
-//   },
-//   {
-//     title:
-//       "How do users expect meeting creation and sending invites to happen? Do they appreciate copying templates from one meeting to the other? Is the intent behind all the form controls clear?",
-//   },
-// ];
-
-// const learningOutcomes = [
-//   { title: "Professional Duties", subtitle: "LO1" },
-//   { title: "Situation Orientation", subtitle: "LO2" },
-//   { title: "Future-Oriented Organisation", subtitle: "LO3" },
-//   { title: "Investigative Problem Solving", subtitle: "LO4" },
-//   { title: "Personal Leadership", subtitle: "LO5" },
-//   { title: "Targeted Interaction", subtitle: "LO6" },
-// ];
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <BaseLayout>
@@ -78,8 +48,18 @@ const researchQuestions = (await getCollection("research-question")).sort(
 				/> -->
       </header>
 
-      <Skills />
+      
     </div>
+
+
+      <QuickLink
+        title="Research Questions"
+        links={researchQuestions.map((lo) => ({
+          title: lo.data.question,
+          to: `research-questions/${lo.data.title.slice(2)}`,
+        }))}
+        longTitle
+      />
 
     <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
@@ -101,6 +81,8 @@ const researchQuestions = (await getCollection("research-question")).sort(
         </div>
       </section>
 
+      
+
       <QuickLink
         title="Learning Outcomes"
         links={learningOutcomes.map((lo) => ({
@@ -113,14 +95,6 @@ const researchQuestions = (await getCollection("research-question")).sort(
         }))}
       />
 
-      <QuickLink
-        title="Research Questions"
-        links={researchQuestions.map((lo) => ({
-          title: lo.data.question,
-          to: `research-questions/${lo.data.title.slice(2)}`,
-        }))}
-        longTitle
-      />
     </main>
   </div>
 </BaseLayout>

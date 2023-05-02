@@ -32,8 +32,8 @@ const { title, description, links, longTitle = false } = Astro.props;
               <p
                 class:list={[
                   longTitle ? "text-sm" : "text-md",
-                  "text-white",
-                  longTitle ? "italic" : "",
+                  "text-purple-500 dark:text-white",
+                  longTitle ? "italic font-extrabold" : "",
                 ]}
               >
                 {longTitle ? `"${link.title}"` : link.title}
