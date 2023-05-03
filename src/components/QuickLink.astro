@@ -31,9 +31,9 @@ const { title, description, links, longTitle = false } = Astro.props;
             <li class="mention-card p-10 h-full">
               <p
                 class:list={[
-                  longTitle ? "text-sm" : "text-md",
+                  longTitle ? "text-md" : "text-md",
                   "text-purple-500 dark:text-white",
-                  longTitle ? "italic font-extrabold" : "",
+                  longTitle ? "italic font-medium" : "",
                 ]}
               >
                 {longTitle ? `"${link.title}"` : link.title}
